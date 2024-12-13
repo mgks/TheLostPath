@@ -4,10 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Lost Path</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HDM32S8WCD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HDM32S8WCD');
+  </script>
   <link rel="stylesheet" href="src/style.css">
+  <link rel="icon" href="src/ico/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="src/app.webmanifest" crossorigin="use-credentials" />
 </head>
 <body>
+  <div class="game-title">The Lost Path</div>
   <canvas id="gameCanvas"></canvas>
+  <div class="footer"><a href="https://github.com/mgks"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"></path></svg> Developed by @mgks</a> | <a href="https://github.com/mgks/TheLostPath" target="_blank">GitHub Repo</a></div>
   <script src="src/script.js"></script>
 </body>
 </html>

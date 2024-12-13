@@ -13,47 +13,83 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+}
+
+/* Common styles for header, timer, and button */
+.game-title, #timer, #restartButton {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3px;
+    color: #2a2a2a;
+    background-color: rgba(255, 255, 255, 0.9);
 
 }
 
-.red{
+.red {
     background-color: rgba(255, 130, 118, 0.7) !important;
 }
 
-/* Timer Styles */
+.game-title {
+    text-align: center;
+    padding: .25em 2em;
+    font-size: 2em;
+    letter-spacing: .25em;
+    top: .5em;
+    font-weight: 100;
+    position: fixed;
+
+}
+
+.footer {
+    text-align: center;
+    background-color: #ffffff;
+    padding: .5em 1em;
+    position: fixed;
+    bottom: 1em;
+    width: fit-content;
+    border-radius: 3px;
+    z-index: 100;
+    font-size: .9em;
+    font-weight: 700;
+    font-family: monospace;
+    letter-spacing: .25px;
+
+}
+
 #timer {
-    position: absolute;
     top: 1em;
     left: 1em;
     padding: .5em 1em;
-    color: #2a2a2a;
     font-size: 1.25rem;
-    background-color: rgba(255, 255, 255, 0.55);
-    border-radius: 3px;
     z-index: 999;
-    text-transform: uppercase;
-    font-weight: bold;
+
 }
 
-/* Restart Button Styles */
 #restartButton {
-    position: absolute;
-    font-family: inherit;
     top: 1em;
     right: 1em;
     padding: .5em 1em;
     font-size: 1.25rem;
-    background-color: rgba(255, 255, 255, 0.55);
-    color: #2a2a2a;
     transition: .5s;
     border: none;
-    border-radius: 3px;
     cursor: pointer;
     z-index: 1000;
-    text-transform: uppercase;
-    font-weight: bold;
+
 }
+
 #restartButton:hover {
     background-color: rgba(255, 255, 255, 0.75);
+}
 
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .bi-heart {
+    color: rgb(246, 71, 71);
+    width: 1.25em;
+    float: left;
+    margin-right: .5em;
 }
